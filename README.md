@@ -1,2 +1,2 @@
 # flux-bootstrap
-Terraform code that deploys Flux controllers onto an existing Kubernetes cluster
+Terraform code that deploys Flux controllers onto an existing AKS cluster
