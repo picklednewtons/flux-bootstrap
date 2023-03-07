@@ -71,6 +71,7 @@ flux create hr kube-state-metrics \
 cat <<EOF > "flux/apps/$CLUSTERNAME/kube-state-metrics/kustomization.yaml"
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+namespace: metrics
 resources:
   - kube-state-metrics.helm.yaml
 EOF
