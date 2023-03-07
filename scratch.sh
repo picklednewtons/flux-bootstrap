@@ -59,7 +59,7 @@ flux create kustomization before-apps \
 
 mkdir "flux/apps/$CLUSTERNAME/kube-state-metrics" -p
 
-# Create HlemReslease source for kube-state-metrics
+# Create HelmRelease source for kube-state-metrics
 flux create hr kube-state-metrics \
     --interval=10m \
     --source=HelmRepository/prometheus-community \
