@@ -1,8 +1,8 @@
-aks_resource_group_name = "RESOURCE_GROUP_NAME_WITH_AKS_RESOURCE"
-aks_cluster_name        = "AKS_RESOURCE_NAME"
+aks_resource_group_name = "aks-sa-lab-001_group"
+aks_cluster_name        = "aks-sa-lab-001"
 system_repo = {
-  url = "ssh://git@github.com/GITHUB_USERNAME/flux-bootstrap.git"
+  url = "ssh://git@github.com/picklednewtons/flux-bootstrap.git"
 }
 git_credentials = {
-  ssh_private_key_path = "PATH_TO_YOUR_SSH_DEPLOY_PRIVATE_KEY"
+  ssh_private_key_path = "~/.ssh/id_rsa"
 }

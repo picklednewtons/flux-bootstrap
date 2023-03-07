@@ -1,5 +1,5 @@
 locals {
-  flux_ssh_private_key = try(var.git_credentials.flux_ssh_private_key_path, null) != null ? file(var.git_credentials.flux_ssh_private_key_path) : null
+  flux_ssh_private_key = try(var.git_credentials.ssh_private_key_path, null) != null ? file(var.git_credentials.ssh_private_key_path) : null
 }
 
 ## https://registry.terraform.io/providers/fluxcd/flux/latest/docs/resources/bootstrap_git
