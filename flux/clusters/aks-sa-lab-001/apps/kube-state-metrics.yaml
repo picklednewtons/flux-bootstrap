@@ -5,6 +5,9 @@ metadata:
   name: kube-state-metrics
   namespace: metrics
 spec:
+  dependsOn:
+  - name: before-apps
+    namespace: flux-system
   interval: 5m0s
   path: ./flux/apps/aks-sa-lab-001/kube-state-metrics
   prune: true
