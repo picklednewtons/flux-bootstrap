@@ -61,8 +61,9 @@ mkdir "flux/apps/$CLUSTERNAME/kube-state-metrics" -p
 
 # Create HelmRelease source for kube-state-metrics
 flux create hr kube-state-metrics \
+    --namespace=metrics \
     --interval=10m \
-    --source=HelmRepository/prometheus-community \
+    --source=HelmRepository/prometheus-community.flux-system \
     --chart=kube-state-metrics \
     --chart-version=">4.30.0" \
     --export > ./flux/apps/$CLUSTERNAME/kube-state-metrics/kube-state-metrics.helm.yaml
