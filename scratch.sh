@@ -20,6 +20,7 @@ cat <<EOF >> "flux/apps/$CLUSTERNAME/before/helmrepos/prometheus-community.yaml"
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
+  namespace: flux-system
   name: prometheus-community
 spec:
   interval: 30m
