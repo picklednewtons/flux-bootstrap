@@ -79,7 +79,6 @@ EOF
 flux create kustomization kube-state-metrics \
     --source=GitRepository/flux-system \
     --depends-on=flux-system/before-apps \
-    --namespace=metrics \
     --path="./flux/apps/$CLUSTERNAME/kube-state-metrics/" \
     --prune=true \
     --interval=5m \
